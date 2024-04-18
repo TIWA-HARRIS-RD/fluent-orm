@@ -1,6 +1,6 @@
 """User Observer"""
 
-from masoniteorm.models import Model
+from fluentorm.models import Model
 
 
 class UserObserver:

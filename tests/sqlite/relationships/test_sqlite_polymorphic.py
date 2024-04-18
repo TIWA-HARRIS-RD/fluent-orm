@@ -1,19 +1,19 @@
 import os
 import unittest
 
-from src.masoniteorm.models import Model
-from src.masoniteorm.relationships import belongs_to, has_many, morph_to
+from src.fluentorm.models import Model
+from src.fluentorm.relationships import belongs_to, has_many, morph_to
 from tests.integrations.config.database import DB
 
 
 class Profile(Model):
     __table__ = "profiles"
-    __connection__ = "dev"
+    __connection__ = "default"
 
 
 class Articles(Model):
     __table__ = "articles"
-    __connection__ = "dev"
+    __connection__ = "default"
 
     @belongs_to("id", "article_id")
     def logo(self):
@@ -22,11 +22,11 @@ class Articles(Model):
 
 class Logo(Model):
     __table__ = "logos"
-    __connection__ = "dev"
+    __connection__ = "default"
 
 
 class Like(Model):
-    __connection__ = "dev"
+    __connection__ = "default"
 
     @morph_to("record_type", "record_id")
     def record(self):
@@ -34,7 +34,7 @@ class Like(Model):
 
 
 class User(Model):
-    __connection__ = "dev"
+    __connection__ = "default"
 
     _eager_loads = ()
 

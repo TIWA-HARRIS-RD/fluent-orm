@@ -1,9 +1,9 @@
 import inspect
 import unittest
 
-from src.masoniteorm.query import QueryBuilder
-from src.masoniteorm.query.grammars import SQLiteGrammar
-from src.masoniteorm.expressions import Raw
+from src.fluentorm.query import QueryBuilder
+from src.fluentorm.query.grammars import SQLiteGrammar
+from src.fluentorm.expressions import Raw
 
 
 class BaseTestCaseUpdateGrammar:

@@ -18,6 +18,8 @@ def load_config(config_path=None):
 
     os.environ["DB_CONFIG_PATH"] = selected_config_path
 
+
+
     # format path as python module if needed
     selected_config_path = (
         selected_config_path.replace("/", ".").replace("\\", ".").rstrip(".py")
@@ -27,6 +29,7 @@ def load_config(config_path=None):
         raise ConfigurationNotFound(
             f"ORM configuration file has not been found in {selected_config_path}."
         )
+
     return config_module
 
 

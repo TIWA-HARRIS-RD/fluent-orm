@@ -1,8 +1,8 @@
 import unittest
 
-from src.masoniteorm.collection import Collection
-from src.masoniteorm.factories import Factory as factory
-from src.masoniteorm.models import Model
+from src.fluentorm.collection import Collection
+from src.fluentorm.factories import Factory as factory
+from src.fluentorm.models import Model
 from tests.User import User
 
 

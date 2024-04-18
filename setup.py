@@ -4,11 +4,11 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="masonite-orm",
+    name="fluent-orm",
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version="2.22.0",
+    version="1.0.0",
     package_dir={"": "src"},
     description="The Official Masonite ORM",
     long_description=long_description,
@@ -29,10 +29,11 @@ setup(
     # requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
     install_requires=[
-        "inflection>=0.3,<0.6",
-        "pendulum>=2.1,<2.2",
+        "inflection>=0.5.1,<1.0",
+        "inflect>=7.2.0",
+        "pendulum>=3.0.0",
         "faker>=4.1.0,<14.0",
-        "cleo>=0.8.0,<0.9",
+        "cleo>=2.0,<3.0",
     ],
     # See https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
@@ -63,27 +64,27 @@ setup(
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
     packages=[
-        "masoniteorm",
-        "masoniteorm.collection",
-        "masoniteorm.commands",
-        "masoniteorm.connections",
-        "masoniteorm.expressions",
-        "masoniteorm.factories",
-        "masoniteorm.helpers",
-        "masoniteorm.migrations",
-        "masoniteorm.models",
-        "masoniteorm.observers",
-        "masoniteorm.pagination",
-        "masoniteorm.providers",
-        "masoniteorm.query",
-        "masoniteorm.query.grammars",
-        "masoniteorm.query.processors",
-        "masoniteorm.relationships",
-        "masoniteorm.schema",
-        "masoniteorm.schema.platforms",
-        "masoniteorm.scopes",
-        "masoniteorm.seeds",
-        "masoniteorm.testing",
+        "fluentorm",
+        "fluentorm.collection",
+        "fluentorm.commands",
+        "fluentorm.connections",
+        "fluentorm.expressions",
+        "fluentorm.factories",
+        "fluentorm.helpers",
+        "fluentorm.migrations",
+        "fluentorm.models",
+        "fluentorm.observers",
+        "fluentorm.pagination",
+        "fluentorm.providers",
+        "fluentorm.query",
+        "fluentorm.query.grammars",
+        "fluentorm.query.processors",
+        "fluentorm.relationships",
+        "fluentorm.schema",
+        "fluentorm.schema.platforms",
+        "fluentorm.scopes",
+        "fluentorm.seeds",
+        "fluentorm.testing",
     ],
     # List additional groups of dependencies here (e.g. development
     # dependencies). You can install these using the following syntax,
@@ -109,7 +110,7 @@ setup(
     # pip to create the appropriate form of executable for the target platform.
     entry_points={
         "console_scripts": [
-            "masonite-orm = masoniteorm.commands.Entry:application.run",
+            "fluent-orm = fluentorm.commands.Entry:application.run",
         ],
     },
 )

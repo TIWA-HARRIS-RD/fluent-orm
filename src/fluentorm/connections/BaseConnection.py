@@ -17,9 +17,9 @@ class BaseConnection:
         return self
 
     def log(
-        self, query, bindings, query_time=0, logger="masoniteorm.connections.queries"
+        self, query, bindings, query_time=0, logger="fluentorm.connections.queries"
     ):
-        logger = logging.getLogger("masoniteorm.connection.queries")
+        logger = logging.getLogger("fluentorm.connection.queries")
         logger.propagate = self.full_details.get("propagate", True)
 
         logger.debug(

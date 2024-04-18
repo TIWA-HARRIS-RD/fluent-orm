@@ -1,10 +1,10 @@
 import inspect
 import unittest
 
-from src.masoniteorm.connections import PostgresConnection
-from src.masoniteorm.query import QueryBuilder
-from src.masoniteorm.query.grammars import PostgresGrammar
-from src.masoniteorm.expressions import Raw
+from src.fluentorm.connections import PostgresConnection
+from src.fluentorm.query import QueryBuilder
+from src.fluentorm.query.grammars import PostgresGrammar
+from src.fluentorm.expressions import Raw
 
 
 class BaseTestCaseUpdateGrammar:

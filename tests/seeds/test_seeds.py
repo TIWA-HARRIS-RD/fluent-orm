@@ -1,7 +1,7 @@
 import unittest
 
 from databases.seeds.user_table_seeder import UserTableSeeder
-from src.masoniteorm.seeds import Seeder
+from src.fluentorm.seeds import Seeder
 
 
 class TestSeeds(unittest.TestCase):

@@ -491,7 +491,7 @@ class Model(TimeStampsMixin, ObservesEvents, metaclass=ModelMeta):
                     value = model.get_new_date(value)
                 dic.update({key: value})
 
-            logger = logging.getLogger("masoniteorm.models.hydrate")
+            logger = logging.getLogger("fluentorm.models.hydrate")
             logger.setLevel(logging.INFO)
             logger.propagate = False
             logger.info(

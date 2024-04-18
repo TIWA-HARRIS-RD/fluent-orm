@@ -15,7 +15,7 @@ class ConnectionFactory:
 
         Arguments:
             key {key} -- The key or driver name you want assigned to this connection
-            connection {masoniteorm.connections.BaseConnection} -- An instance of a BaseConnection class.
+            connection {fluentorm.connections.BaseConnection} -- An instance of a BaseConnection class.
 
         Returns:
             cls
@@ -33,7 +33,7 @@ class ConnectionFactory:
             Exception: Raises exception if there are no driver keys that match
 
         Returns:
-            masoniteorm.connection.BaseConnection -- Returns an instance of a BaseConnection class.
+            fluentorm.connection.BaseConnection -- Returns an instance of a BaseConnection class.
         """
 
         DB = load_config(config_path=self.config_path).DB

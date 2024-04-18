@@ -1,4 +1,4 @@
-from src.masoniteorm.migrations import Migration
+from src.fluentorm.migrations import Migration
 from tests.User import User
 
 

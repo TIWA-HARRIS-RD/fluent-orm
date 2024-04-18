@@ -13,7 +13,7 @@ class MySQLPostProcessor:
         """Process the results from the query to the database.
 
         Args:
-            builder (masoniteorm.builder.QueryBuilder): The query builder class
+            builder (fluentorm.builder.QueryBuilder): The query builder class
             results (dict): The result from an insert query or the creates from the query builder.
             This is usually a dictionary.
             id_key (string): The key to set the primary key to. This is usually the primary key of the table.
@@ -30,7 +30,7 @@ class MySQLPostProcessor:
         """Gets the specific column value from a table. Typically done after an update to
         refetch the new value of a field.
 
-            builder (masoniteorm.builder.QueryBuilder): The query builder class
+            builder (fluentorm.builder.QueryBuilder): The query builder class
             column (string): The column to refetch the value for.
             results (dict): The result from an update query from the query builder.
             This is usually a dictionary.

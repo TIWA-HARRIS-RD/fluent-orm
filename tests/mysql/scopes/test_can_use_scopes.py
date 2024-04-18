@@ -1,8 +1,8 @@
 import inspect
 import unittest
 
-from src.masoniteorm.models import Model
-from src.masoniteorm.scopes import SoftDeletesMixin, scope
+from src.fluentorm.models import Model
+from src.fluentorm.scopes import SoftDeletesMixin, scope
 from tests.User import User
 
 

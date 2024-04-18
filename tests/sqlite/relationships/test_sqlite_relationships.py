@@ -1,6 +1,6 @@
 import unittest
-from src.masoniteorm.models import Model
-from src.masoniteorm.relationships import belongs_to, has_many, has_one, belongs_to_many
+from src.fluentorm.models import Model
+from src.fluentorm.relationships import belongs_to, has_many, has_one, belongs_to_many
 from tests.integrations.config.database import DB
 
 class Profile(Model):

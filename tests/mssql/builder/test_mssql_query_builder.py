@@ -1,10 +1,10 @@
 import inspect
 import unittest
 
-from src.masoniteorm.connections import ConnectionFactory
-from src.masoniteorm.models import Model
-from src.masoniteorm.query import QueryBuilder
-from src.masoniteorm.query.grammars import PostgresGrammar
+from src.fluentorm.connections import ConnectionFactory
+from src.fluentorm.models import Model
+from src.fluentorm.query import QueryBuilder
+from src.fluentorm.query.grammars import PostgresGrammar
 from tests.utils import MockConnectionFactory
 
 

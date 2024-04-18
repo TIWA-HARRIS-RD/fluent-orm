@@ -497,7 +497,7 @@ class Model:
         """Sets the global scopes that should be used before creating the SQL.
 
         Arguments:
-            cls {masoniteorm.Model} -- An ORM model class.
+            cls {fluentorm.Model} -- An ORM model class.
             name {string} -- The name of the global scope.
 
         Returns:

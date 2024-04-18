@@ -5,9 +5,9 @@ import unittest
 
 import pendulum
 
-from src.masoniteorm.collection import Collection
-from src.masoniteorm.exceptions import ModelNotFound
-from src.masoniteorm.models import Model
+from src.fluentorm.collection import Collection
+from src.fluentorm.exceptions import ModelNotFound
+from src.fluentorm.models import Model
 from tests.User import User
 
 

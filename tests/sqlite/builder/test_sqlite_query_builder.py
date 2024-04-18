@@ -1,12 +1,12 @@
 import inspect
 import unittest
 
-from src.masoniteorm.connections import ConnectionFactory
-from src.masoniteorm.models import Model
-from src.masoniteorm.query import QueryBuilder
-from src.masoniteorm.query.grammars import SQLiteGrammar
+from src.fluentorm.connections import ConnectionFactory
+from src.fluentorm.models import Model
+from src.fluentorm.query import QueryBuilder
+from src.fluentorm.query.grammars import SQLiteGrammar
 from tests.utils import MockConnectionFactory
-from src.masoniteorm.exceptions import ModelNotFound, HTTP404
+from src.fluentorm.exceptions import ModelNotFound, HTTP404
 
 
 class UserMock(Model):

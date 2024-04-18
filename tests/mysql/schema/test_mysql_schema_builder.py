@@ -1,11 +1,11 @@
 import os
 import unittest
 
-from src.masoniteorm import Model
+from src.fluentorm import Model
 from tests.integrations.config.database import DATABASES
-from src.masoniteorm.connections import MySQLConnection
-from src.masoniteorm.schema import Schema
-from src.masoniteorm.schema.platforms import MySQLPlatform
+from src.fluentorm.connections import MySQLConnection
+from src.fluentorm.schema import Schema
+from src.fluentorm.schema.platforms import MySQLPlatform
 
 from tests.integrations.config.database import DATABASES
 

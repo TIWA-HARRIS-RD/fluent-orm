@@ -1,8 +1,8 @@
 import inspect
 import unittest
 
-from src.masoniteorm.models import Model
-from src.masoniteorm.scopes import (
+from src.fluentorm.models import Model
+from src.fluentorm.scopes import (
     SoftDeleteScope,
     SoftDeletesMixin,
     TimeStampsMixin,

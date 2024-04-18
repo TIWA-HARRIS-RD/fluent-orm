@@ -4,7 +4,7 @@ import unittest
 
 import pendulum
 
-from src.masoniteorm.models import Model
+from src.fluentorm.models import Model
 
 
 class ModelTest(Model):

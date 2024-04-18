@@ -1,7 +1,7 @@
 import unittest
 
-from src.masoniteorm.models import Model
-from src.masoniteorm.relationships import (
+from src.fluentorm.models import Model
+from src.fluentorm.relationships import (
     has_one,
     belongs_to_many,
     has_one_through,

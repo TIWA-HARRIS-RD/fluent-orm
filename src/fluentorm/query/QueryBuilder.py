@@ -53,10 +53,10 @@ class QueryBuilder(ObservesEvents):
         """QueryBuilder initializer
 
         Arguments:
-            grammar {masoniteorm.grammar.Grammar} -- A grammar class.
+            grammar {fluentorm.grammar.Grammar} -- A grammar class.
 
         Keyword Arguments:
-            connection {masoniteorm.connection.Connection} -- A connection class (default: {None})
+            connection {fluentorm.connection.Connection} -- A connection class (default: {None})
             table {str} -- the name of the table (default: {""})
         """
         self.config_path = config_path
@@ -108,7 +108,6 @@ class QueryBuilder(ObservesEvents):
         if not self._connection_details:
             DB = load_config(config_path=self.config_path).DB
             self._connection_details = DB.get_connection_details()
-
         self.on(connection)
 
         if grammar:
@@ -293,7 +292,7 @@ class QueryBuilder(ObservesEvents):
         """Sets a scope based on a class and maps it to a name.
 
         Arguments:
-            cls {masoniteorm.Model} -- An ORM model class.
+            cls {fluentorm.Model} -- An ORM model class.
             name {string} -- The name of the scope to use.
 
         Returns:
@@ -308,7 +307,7 @@ class QueryBuilder(ObservesEvents):
         """Sets the global scopes that should be used before creating the SQL.
 
         Arguments:
-            cls {masoniteorm.Model} -- An ORM model class.
+            cls {fluentorm.Model} -- An ORM model class.
             name {string} -- The name of the global scope.
 
         Returns:
@@ -333,7 +332,7 @@ class QueryBuilder(ObservesEvents):
         """Sets the global scopes that should be used before creating the SQL.
 
         Arguments:
-            cls {masoniteorm.Model} -- An ORM model class.
+            cls {fluentorm.Model} -- An ORM model class.
             name {string} -- The name of the global scope.
 
         Returns:
@@ -391,7 +390,6 @@ class QueryBuilder(ObservesEvents):
             self.connection = self._connection_details.get("default")
         else:
             self.connection = connection
-
         if self.connection not in self._connection_details:
             raise ConnectionNotRegistered(
                 f"Could not find the '{self.connection}' connection details"
@@ -2060,7 +2058,7 @@ class QueryBuilder(ObservesEvents):
         """Initializes and returns the grammar class.
 
         Returns:
-            masoniteorm.grammar.Grammar -- An ORM grammar class.
+            fluentorm.grammar.Grammar -- An ORM grammar class.
         """
 
         # Either _creates when creating, otherwise use columns

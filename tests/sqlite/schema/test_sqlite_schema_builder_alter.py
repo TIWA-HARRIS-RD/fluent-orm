@@ -1,10 +1,10 @@
 import unittest
 
 from tests.integrations.config.database import DATABASES
-from src.masoniteorm.connections import SQLiteConnection
-from src.masoniteorm.schema import Schema
-from src.masoniteorm.schema.platforms import SQLitePlatform
-from src.masoniteorm.schema.Table import Table
+from src.fluentorm.connections import SQLiteConnection
+from src.fluentorm.schema import Schema
+from src.fluentorm.schema.platforms import SQLitePlatform
+from src.fluentorm.schema.Table import Table
 
 
 class TestSQLiteSchemaBuilderAlter(unittest.TestCase):

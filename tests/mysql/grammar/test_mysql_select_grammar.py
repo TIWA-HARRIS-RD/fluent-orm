@@ -1,8 +1,8 @@
 import inspect
 import unittest
 
-from src.masoniteorm.query.grammars import MySQLGrammar
-from src.masoniteorm.testing import BaseTestCaseSelectGrammar
+from src.fluentorm.query.grammars import MySQLGrammar
+from src.fluentorm.testing import BaseTestCaseSelectGrammar
 
 
 class TestMySQLGrammar(BaseTestCaseSelectGrammar, unittest.TestCase):

@@ -1,8 +1,8 @@
 import unittest
 
-from src.masoniteorm.schema import Column, Table
-from src.masoniteorm.schema.platforms.SQLitePlatform import SQLitePlatform
-from src.masoniteorm.schema.TableDiff import TableDiff
+from src.fluentorm.schema import Column, Table
+from src.fluentorm.schema.platforms.SQLitePlatform import SQLitePlatform
+from src.fluentorm.schema.TableDiff import TableDiff
 
 
 class TestTableDiff(unittest.TestCase):

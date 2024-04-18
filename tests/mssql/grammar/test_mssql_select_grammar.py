@@ -1,8 +1,8 @@
 import inspect
 import unittest
 
-from src.masoniteorm.query.grammars import MSSQLGrammar
-from src.masoniteorm.testing import BaseTestCaseSelectGrammar
+from src.fluentorm.query.grammars import MSSQLGrammar
+from src.fluentorm.testing import BaseTestCaseSelectGrammar
 
 
 class TestMSSQLGrammar(BaseTestCaseSelectGrammar, unittest.TestCase):

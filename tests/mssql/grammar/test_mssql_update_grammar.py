@@ -1,8 +1,8 @@
 import unittest
 
-from src.masoniteorm.query import QueryBuilder
-from src.masoniteorm.query.grammars import MSSQLGrammar
-from src.masoniteorm.expressions import Raw
+from src.fluentorm.query import QueryBuilder
+from src.fluentorm.query.grammars import MSSQLGrammar
+from src.fluentorm.expressions import Raw
 
 
 class TestMSSQLUpdateGrammar(unittest.TestCase):

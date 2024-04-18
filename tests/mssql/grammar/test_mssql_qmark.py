@@ -1,7 +1,7 @@
 import unittest
 
-from src.masoniteorm.query import QueryBuilder
-from src.masoniteorm.query.grammars import MSSQLGrammar
+from src.fluentorm.query import QueryBuilder
+from src.fluentorm.query.grammars import MSSQLGrammar
 
 
 class TestMSSQLQmark(unittest.TestCase):

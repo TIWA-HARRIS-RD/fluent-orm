@@ -2,11 +2,11 @@ import inspect
 import os
 import unittest
 
-from src.masoniteorm.connections import ConnectionFactory
-from src.masoniteorm.models import Model
-from src.masoniteorm.query import QueryBuilder
-from src.masoniteorm.query.grammars import MySQLGrammar
-from src.masoniteorm.relationships import belongs_to
+from src.fluentorm.connections import ConnectionFactory
+from src.fluentorm.models import Model
+from src.fluentorm.query import QueryBuilder
+from src.fluentorm.query.grammars import MySQLGrammar
+from src.fluentorm.relationships import belongs_to
 from tests.utils import MockConnectionFactory
 from tests.integrations.config.database import DB
 

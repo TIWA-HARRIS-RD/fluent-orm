@@ -1,7 +1,7 @@
 """UserTableSeeder Seeder."""
 
-from src.masoniteorm.seeds import Seeder
-from src.masoniteorm.factories import Factory as factory
+from src.fluentorm.seeds import Seeder
+from src.fluentorm.factories import Factory as factory
 from tests.User import User
 
 factory.register(User, lambda faker: {'email': faker.email()})

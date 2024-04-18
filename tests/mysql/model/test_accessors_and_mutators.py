@@ -5,9 +5,9 @@ import unittest
 
 import pendulum
 
-from src.masoniteorm.collection import Collection
-from src.masoniteorm.models import Model
-from src.masoniteorm.query.grammars import MSSQLGrammar
+from src.fluentorm.collection import Collection
+from src.fluentorm.models import Model
+from src.fluentorm.query.grammars import MSSQLGrammar
 from tests.User import User
 
 

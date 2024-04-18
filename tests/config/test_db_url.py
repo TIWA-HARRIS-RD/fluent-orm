@@ -2,9 +2,9 @@ import os
 import pytest
 import unittest
 
-from src.masoniteorm.config import db_url, load_config
-from src.masoniteorm.exceptions import InvalidUrlConfiguration
-from src.masoniteorm.connections import ConnectionResolver
+from src.fluentorm.config import db_url, load_config
+from src.fluentorm.exceptions import InvalidUrlConfiguration
+from src.fluentorm.connections import ConnectionResolver
 
 
 class TestDbUrlHelper(unittest.TestCase):

@@ -1,6 +1,6 @@
 import unittest
 
-from src.masoniteorm.connections import ConnectionResolver
+from src.fluentorm.connections import ConnectionResolver
 from tests.integrations.config.database import DB
 
 

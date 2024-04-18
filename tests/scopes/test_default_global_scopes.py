@@ -3,8 +3,8 @@ import unittest
 import uuid
 import pendulum
 
-from src.masoniteorm.models import Model
-from src.masoniteorm.scopes import (
+from src.fluentorm.models import Model
+from src.fluentorm.scopes import (
     SoftDeletesMixin,
     TimeStampsScope,
     TimeStampsMixin,

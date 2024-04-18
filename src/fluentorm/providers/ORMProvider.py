@@ -1,6 +1,6 @@
 from masonite.providers import Provider
 
-from masoniteorm.commands import (
+from fluentorm.commands import (
     MigrateCommand,
     MigrateRollbackCommand,
     MigrateRefreshCommand,

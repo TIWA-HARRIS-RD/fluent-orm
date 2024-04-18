@@ -1,7 +1,7 @@
 import os
 import unittest
 
-from src.masoniteorm.query.EagerRelation import EagerRelations
+from src.fluentorm.query.EagerRelation import EagerRelations
 
 
 class TestEagerRelation(unittest.TestCase):

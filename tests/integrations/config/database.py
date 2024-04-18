@@ -4,8 +4,8 @@ import logging
 
 from dotenv import load_dotenv
 
-from src.masoniteorm.connections import ConnectionResolver
-from src.masoniteorm.config import db_url
+from src.fluentorm.connections import ConnectionResolver
+from src.fluentorm.config import db_url
 
 """
 |--------------------------------------------------------------------------
@@ -25,7 +25,7 @@ They can be named whatever you want.
 """
 
 DATABASES = {
-    "default": "mysql",
+    "default": "t",
     "mysql": {
         "driver": "mysql",
         "host": os.getenv("MYSQL_DATABASE_HOST"),
@@ -107,7 +107,7 @@ DATABASES = {
 
 DB = ConnectionResolver().set_connection_details(DATABASES)
 
-logger = logging.getLogger("masoniteorm.connection.queries")
+logger = logging.getLogger("fluentorm.connection.queries")
 logger.setLevel(logging.DEBUG)
 
 formatter = logging.Formatter("It executed the query %(query)s")

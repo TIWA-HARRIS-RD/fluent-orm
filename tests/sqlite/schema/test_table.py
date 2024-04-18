@@ -1,9 +1,9 @@
 import unittest
 
 from tests.integrations.config.database import DATABASES
-from src.masoniteorm.connections import SQLiteConnection
-from src.masoniteorm.schema import Column, Table
-from src.masoniteorm.schema.platforms.SQLitePlatform import SQLitePlatform
+from src.fluentorm.connections import SQLiteConnection
+from src.fluentorm.schema import Column, Table
+from src.fluentorm.schema.platforms.SQLitePlatform import SQLitePlatform
 
 
 class TestTable(unittest.TestCase):

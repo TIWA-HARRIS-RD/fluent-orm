@@ -1,4 +1,4 @@
-from src.masoniteorm.migrations.Migration import Migration
+from src.fluentorm.migrations.Migration import Migration
 
 class CreateArticlesTable(Migration):
 
